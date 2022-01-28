@@ -2,3 +2,4 @@
 *.xml
 /.idea
 /wordpress/wp-content/uploads
+/wordpress/wp-content/themes
