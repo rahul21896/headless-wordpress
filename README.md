@@ -18,4 +18,18 @@
 - ACF To Reset API ( Converting Acf fields to ret api )
 ```
 
+##### How to Set up frontity project
+```
+- Open Terminal go to root of cloned repository
+- cd frontity
+- npm install
+- npx frontity dev  
+```
 
+##### How to set up new frontity project 
+```
+- mkdir "Project Name"
+- cd "Project Name"
+- npx frontity create --use-cwd
+- npx frontity dev 
+```
