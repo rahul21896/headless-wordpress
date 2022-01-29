@@ -1,15 +1,19 @@
 import React from 'react';
-import {connect,styled} from "frontity";
+import {connect,styled,css} from "frontity";
 
-const FlexibleGeneralContent = ({data}) => {
+
+
+const FlexibleGeneralContent = ({data,libraries}) => {
     const section_title = data.section_title;
     const section_content = data.section_content;
+    const Html2React = libraries.html2react.Component;
+
     return(
         <>
             <GeneralContent>
                <div>
                    <h2>{section_title}</h2>
-                   <Content dangerouslySetInnerHTML={{ __html: section_content }} />
+                   <Html2React html={section_content} />
                </div>
             </GeneralContent>
         </>
@@ -34,10 +38,7 @@ const GeneralContent = styled.div`
            width:70%;
            
         }
-    `;
-
-const Content = styled.p`
-            color:red;
-            font-size:20px;
-            text-align:center;
+        
+      p{
+      color:red;font-size:20px;text-align:center;}
     `;
