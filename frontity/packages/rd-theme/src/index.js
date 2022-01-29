@@ -1,3 +1,4 @@
+import React from 'react';
 import rdTheme from "./rdTheme";
 
 
@@ -7,9 +8,19 @@ export default {
     rdTheme: rdTheme
   },
   state: {
-    rdTheme: {}
+    rdTheme: {
+      menu:[],
+      site_name:'RD Theme',
+      isLoading:true,
+      site_options: [],
+      homepage:'/home-page/'
+    }
   },
   actions: {
-    rdTheme: {}
+    rdTheme: {
+      setLoading: ({state,status}) => {
+          state.rdTheme.isLoading = status;
+      }
+    }
   }
 };

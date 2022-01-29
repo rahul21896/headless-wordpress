@@ -12,7 +12,9 @@ const settings = {
       "name": "rd-theme",
       "state": {
         "theme": {
-          isMenuOpen:true
+           "pageSettings":{
+             "pageTitle": "Rd Theme"
+           }
         }
       }
     },
@@ -20,7 +22,9 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "http://localhost/headless-wordpress/wordpress/"
+          "url": "http://localhost/headless-wordpress/wordpress/",
+          "homepage":"/home-page/",
+          "postsPage":"/sample-page/"
         }
       }
     },
