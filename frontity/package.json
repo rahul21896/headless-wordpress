@@ -27,6 +27,8 @@
     "rd-theme": "file:packages/rd-theme",
     "react": "^17.0.2",
     "react-simple-image-slider": "^2.3.0",
-    "react-spring": "^9.4.2"
+    "react-slick": "^0.28.1",
+    "react-spring": "^9.4.2",
+    "slick-carousel": "^1.8.1"
   }
 }
