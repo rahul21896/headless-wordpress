@@ -11,7 +11,7 @@ import {useTransition,animated} from 'react-spring';
 
 const rdTheme = ({state,actions}) => {
     const data = state.source.get(state.router.link);
-
+    state.rdTheme.isMenuOpen = false;
     axios.get(state.source.url+'/wp-json/rd-theme/v1/menu-list/primary')
         .then(function (response) {
             const menu = response.data;
@@ -34,9 +34,7 @@ const rdTheme = ({state,actions}) => {
         <>
 
             <div>
-                <RContainer>
-                    <Header />
-                </RContainer>
+                <Header />
                 <Body />
                 {(data.isFetching || state.rdTheme.isLoading) && <RDiv><Loader><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></Loader></RDiv>}
             </div>

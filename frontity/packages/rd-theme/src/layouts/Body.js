@@ -10,7 +10,7 @@ import HomePage from "./pages/HomePage";
 const Body = ({state,actions}) => {
     const data = state.source.get(state.router.link);
     return(
-        <RContainer>
+        <RContainer style={{ marginTop:'100px' }}>
             <Switch>
                 <SinglePost when={data.isHome} />
                 <PostList when={data.isArchive} />

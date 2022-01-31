@@ -16,7 +16,8 @@ export default {
       site_name:'RD Theme',
       isLoading:true,
       site_options: [],
-      homepage:'/home-page/'
+      homepage:'/home-page/',
+      isMenuOpen:false
     }
   },
   actions: {

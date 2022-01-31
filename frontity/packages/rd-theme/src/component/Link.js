@@ -5,8 +5,8 @@ const Anchor = styled.a`
     text-transform:uppercase;
   ${props =>
     props.isActive
-        ? "color: steelblue"
-        : "color: black;"};
+        ? "color: steelblue !important"
+        : "color: white"};
 `;
 
 
