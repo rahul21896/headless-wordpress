@@ -9,16 +9,7 @@ import dd from '../assets/style.css';
 const Header = ({state}) => {
     const menu = state.rdTheme.menu;
     return (
-        <RContainer style={{ position: 'fixed !important',
-            background: '#e4e4e4 !important',
-            width: '100%',
-            height: '85px',
-            top: '0',
-            maxWidth: '1235px',
-            margin: '0',
-            padding: '20px',
-            left: '0',
-            zIndex: '99999', }}>
+        <HeaderContainer>
             <Global styles={css(dd)} />
                 <a href="http://localhost:3000" className="logo">
                     <img src={Logo} alt="" />
@@ -37,8 +28,21 @@ const Header = ({state}) => {
 
                     </ul>
                 </nav>
-        </RContainer>
+        </HeaderContainer>
     );
 };
 
 export default connect(Header);
+
+const HeaderContainer = styled.div`
+            position: fixed !important;
+            background: #FFFFFF !important;
+            width: 100%;
+            height: 85px;
+            top: 0;
+            max-width: 1235px;
+            margin: 0;
+            padding: 20px;
+            left: 0;
+            z-index: 99999;
+    `;
