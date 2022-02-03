@@ -33,3 +33,21 @@
 - npx frontity create --use-cwd
 - npx frontity dev 
 ```
+
+##### Create Custom Theme From Scratch
+
+- Go To Root Folder of frontity project ``cd frontity``
+- Create new theme / package using the command: ``npx frontity create-package "Theme Name"``
+- Package created under **frontity / packages / rd-theme**
+- Package includes following files : 
+    ```
+    - package.json
+    - src/index.js : entry file of the frontity project
+    ```
+- Change Theme Name into your setting file : frontity.settings.json
+    ```
+    {
+          "name": "rd-theme",
+    }
+    ```
+- 
