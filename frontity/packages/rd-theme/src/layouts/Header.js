@@ -11,7 +11,7 @@ const Header = ({state}) => {
     return (
         <HeaderContainer>
             <Global styles={css(dd)} />
-                <a href="http://localhost:3000" className="logo">
+                <a href="/" className="logo">
                     <img src={Logo} alt="" />
                 </a>
                 <input className="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" checked={state.rdTheme.isMenuOpen} onChange={() => {state.rdTheme.isMenuOpen = !state.rdTheme.isMenuOpen} } />
