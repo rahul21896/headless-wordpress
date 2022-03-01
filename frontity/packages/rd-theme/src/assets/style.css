@@ -319,7 +319,9 @@ h1{
 }
 
 
-
+li.slick-active div {
+    background-color: #000;
+}
 
 
 
