@@ -38,7 +38,7 @@ const rdTheme = ({state,actions}) => {
                     <Header />
                 </RContainer>
                 <Body />
-                {(data.isFetching || state.rdTheme.isLoading) && <RDiv><Loader><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></Loader></RDiv>}
+                {/*{(data.isFetching || state.rdTheme.isLoading) && <RDiv><Loader><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></Loader></RDiv>}*/}
             </div>
 
 

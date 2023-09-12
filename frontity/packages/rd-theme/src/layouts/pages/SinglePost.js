@@ -10,6 +10,7 @@ const SinglePost = ({ state ,libraries}) => {
     const post = state.source[data.type][data.id];
     const acf_fields = post.acf;
     const Html2React = libraries.html2react.Component;
+    console.log(acf_fields,'Test');
 
     return (
         <div>

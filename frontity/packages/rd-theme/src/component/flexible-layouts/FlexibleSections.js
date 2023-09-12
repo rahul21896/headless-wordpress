@@ -3,6 +3,7 @@ import {connect} from "frontity";
 import Switch from '@frontity/components/switch';
 import FlexibleSlider from "./FlexibleSlider";
 import FlexibleGeneralContent from "./FlexibleGeneralContent";
+import FlexibleDemoContent from "./FlexibleDemoContent";
 
 const FlexibleSections = ({state}) => {
         const data = state.source.get(state.router.link);
@@ -16,6 +17,7 @@ const FlexibleSections = ({state}) => {
                         <Switch>
                                 <FlexibleSlider data={item} when={item.acf_fc_layout === 'flexible-image-slider'} />
                                 <FlexibleGeneralContent data={item} when={item.acf_fc_layout === "flexible-general-content"} />
+                                <FlexibleDemoContent data={item} when={item.acf_fc_layout === "flexible-demo-content"} />
                         </Switch>
                     );
                 })

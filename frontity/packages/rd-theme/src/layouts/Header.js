@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect, Global, css, styled,Head} from 'frontity';
-import Logo from '../assets/images/expatland-logo.svg';
+import Logo from '../assets/images/dark.png';
 import Link from "../component/Link";
 import {RLogo,RMenu,RHeader} from "../component/CommonStyle";
 

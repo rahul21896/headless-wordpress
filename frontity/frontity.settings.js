@@ -22,7 +22,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "http://localhost/headless-wordpress/wordpress/",
+          "url": "http://local.headless.com",
           "homepage":"/home-page/",
           "postsPage":"/sample-page/"
         }
